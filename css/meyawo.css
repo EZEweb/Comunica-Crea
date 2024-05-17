@@ -1,18 +1,5 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* Meyawo Landing page
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
 :root {
   --blue: #1e549f;
   --indigo: #695aa6;
@@ -27,21 +14,21 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #393e46;
-  --primary: #695aa6;
-  --secondary: #393e46;
-  --success: #1bb74f;
+  --primary: #B49D85;
+  --secondary: #C8DCD6;
+  --success: #DCB59C;
   --info: #17a2b8;
   --warning: #ff6d02;
   --danger: #ec185d;
   --light: #f8f9fa;
-  --dark: #212529;
+  --dark: #2D4927;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Open Sans", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family: "Rufina", serif;
+  --font-family: "Rufina", serif;
 }
 
 *,
@@ -51,7 +38,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Rufina", serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -63,7 +50,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rufina", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -190,7 +177,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Rufina", serif;
   font-size: 1em;
 }
 
@@ -250,7 +237,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: "Rufina", serif;
   font-size: inherit;
   line-height: inherit;
 }
@@ -2772,14 +2759,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #695aa6;
-  border-color: #695aa6;
+  background-color: #B49D85;
+  border-color: #B49D85;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #594c8d;
-  border-color: #544885;
+  background-color: #DCB59C;
+  border-color: #DCB59C;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -6555,7 +6542,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rufina", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6668,7 +6655,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rufina", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7141,13 +7128,13 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #695aa6 !important;
+  background-color: #ECE9DF !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #544885 !important;
+  background-color: #DCB59C !important;
 }
 
 .bg-secondary {
@@ -10654,7 +10641,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: "Rufina", serif;
 }
 
 .text-justify {
@@ -11074,12 +11061,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  font-family: 'Baloo Paaji', cursive;
+  font-family: "Rufina", serif;
   color: #695aa6;
 }
 
 .my-font {
-  font-family: 'Baloo Paaji', cursive;
+  font-family: "Rufina", serif;
 }
 
 p {
@@ -11626,7 +11613,7 @@ pre .code {
           align-items: center;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
-  font-family: 'Baloo Paaji', cursive;
+  font-family: "Rufina", serif;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11673,7 +11660,7 @@ pre .code {
 }
 
 .custom-navbar .hamburger .hamburger-inner, .custom-navbar .hamburger .hamburger-inner::before, .custom-navbar .hamburger .hamburger-inner::after {
-  background: #fff;
+  background: #2D4927;
 }
 
 .custom-navbar .nav {
@@ -11696,7 +11683,7 @@ pre .code {
 }
 
 .custom-navbar .nav .item .link {
-  color: #fff;
+  color: #2D4927;
   font-weight: 500;
   text-decoration: none;
 }
@@ -11706,7 +11693,7 @@ pre .code {
 }
 
 .custom-navbar.affix {
-  background: #fff;
+  background: #ECE9DF;
   border-bottom: 1px solid rgba(222, 226, 230, 0.34);
 }
 
@@ -12061,7 +12048,7 @@ pre .code {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../imgs/header.jpg);
+  background-color: #C8DCD6;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -12087,8 +12074,8 @@ pre .code {
 }
 
 .header .header-content .header-title .up {
-  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
-  font-weight: 500;
+  font-size: calc(8px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-weight: 300;
   color: #444;
   margin-bottom: 5px;
   position: relative;
@@ -12096,17 +12083,17 @@ pre .code {
 }
 
 .header .header-content .header-title .down {
-  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(24px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
   margin-bottom: 0;
   position: relative;
   display: block;
 }
 
 .header .header-content .header-subtitle {
-  font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(4px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
   letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
   opacity: .8;
-  margin-top: -10px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
