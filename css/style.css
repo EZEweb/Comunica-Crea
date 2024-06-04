@@ -549,6 +549,11 @@ pre code {
   margin-left: auto;
 }
 
+.section .galeria img{
+  padding-top: 5%;
+  width: 80%;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -591,6 +596,12 @@ pre code {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.row .col-md-6{
+  margin: 5% 0 0 0;
 }
 
 .no-gutters {
@@ -1382,6 +1393,7 @@ pre code {
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
     max-width: 25%;
+    margin: 5% 0 0 0;
   }
   .col-lg-4 {
     -webkit-box-flex: 0;
@@ -11130,6 +11142,10 @@ p {
   padding: 10px;
 }
 
+.section .row .body{
+  padding-top: 10%;
+}
+
 .service-card .body img.icon {
   margin-top: 40px;
   width: 55px;
@@ -11358,6 +11374,7 @@ p {
 .testimonial-card-img-holder {
   min-width: 45px;
   max-width: 45px;
+  transform: rotate(45deg);
   z-index: 999;
 }
 
@@ -11366,7 +11383,6 @@ p {
   padding: 4px;
   width: 90px;
   height: 90px;
-  border-radius: 50%;
 }
 
 .testimonial-card-body {
@@ -12212,6 +12228,20 @@ pre .code {
 /* sections */
 .section {
   padding: 70px 10px;
+}
+
+.section .container .about{
+  margin: 10% 0 10% 0;
+}
+
+.section .about-img-holder img{
+  background-color: #ECE9DF;
+  box-shadow: -12px -12px 2px 1px #C8DCD6;
+}
+
+.section- .about-img-holder img{
+  background-color: #ECE9DF;
+  box-shadow: -12px -12px 2px 1px #C8DCD6;
 }
 
 .section .section-title {
