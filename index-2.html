@@ -43,25 +43,49 @@
     <header id="home" class="header">
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">¡Hola!</span>
-                <span class="down">Somos Comunica & Crea
-                    <br>Agencia de Comunicación y Marketing.
-                    </span>
+                <span class="up" style="padding-bottom: 3%;">¡Hola! Soy Giuliana Oviedo</span>
+                <span class="down">Acompaño a las pequeñas y medianas empresas a potenciar su marca y comunidad en medios digitales, desde el marketing emocional.</span>
             </h1>
-            <p class="header-subtitle">| Gestión de redes sociales
-            <br>| Diseño Gráfico
-            <br>| Fotografía y video
-            <br>| Publicidad</p>
-            <button class="btn btn-primary"><a href="story.html" style="color: aliceblue;" target="_blank">¡Conocé nuestra historia!</a></button>
+            <br>
+            <p class="header-subtitle">Agencia de Comunicación y Marketing.</p>
+            <button class="btn btn-primary"><a href="story.html" style="color: aliceblue;">¡Conocé nuestra historia!</a></button>
         </div>              
     </header>
 
     <section class="section pt-0" id="about">
         <div class="container text-center">
             <div class="about">
-                <div class="about-img-holder">
-                    <img src="imgs/giuli.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
+                <!-- <div class="about-img-holder">
+                    <img src="imgs/giuli.png" class="about-img" alt="Giuli, Community Mananger, agencia, diseño, desarrollo web">
+                </div> -->
+                <link href="https://fonts.googleapis.com/css?family=Barlow|Pacifico&display=swap" rel="stylesheet">
+
+                <article>
+                  <div id="GalleryHolder">
+                
+                    <div id="GalleryTabHolder" style="display: none;">
+                      <div class="GalleryTab">
+                        <img src="imgs/folio-1.jpg" alt="A Photo of a dog" />
+                      </div>
+                      <div class="GalleryTab">
+                        <img src="imgs/folio-2.jpg" alt="A Photo of a girl" />
+                      </div>
+                      <div class="GalleryTab">
+                        <img src="imgs/folio-3.jpg" alt="A Photo of a dandelion" />
+                      </div>
+                    </div>
+                
+                    <div class="GalleryImage">
+                      <img src="imgs/folio-1.jpg" alt="A Photo of a dog"/>
+                    </div>
+                    <div class="GalleryImage">
+                      <img src="imgs/folio-2.jpg" alt="A Photo of a girl" />
+                    </div>
+                    <div class="GalleryImage">
+                      <img src="imgs/folio-3.jpg" alt="A Photo of a dandelion" />
+                    </div>
+                  </div>
+                </article>
                 <div class="about-caption">
                     <p class="section-subtitle">¿Quiénes somos?</p>
                     <h2 class="section-title mb-3">Nuestra historia</h2>
@@ -247,7 +271,10 @@
                         </div>
                         <div class="testimonial-card-body">
                             <p class="testimonial-card-subtitle">Queríamos expresar nuestro más sincero agradecimiento por el excelente y fructífero trabajo que han eralizado con nosotros. Gracias a su dedicación y profesionalismo, hemos logrado alcanzar resultados excepcionales en nuestras campañas de comunicación. Estamos completamente satisfechos con los logros obtenidos y reconocemos el valor que su empresa ha aportado a nuestro crecimiento y visibilidad en el mercado.</p>
-                            <h6 class="testimonial-card-title">Sergio Beati - El Estribo Restaurante</h6>
+                            <div style="display: flex; width: 100%;">
+                                <img src="imgs/cliente-6.png" style="display: flex; width: 50%;">
+                                <h6 class="testimonial-card-title" style="display: flex; width: 40%;">Sergio Beati</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,7 +285,10 @@
                         </div>
                         <div class="testimonial-card-body">
                             <p class="testimonial-card-subtitle">Excelente comunicación y servicio, nos ayudaron a encaminar el concepto y la estética de comunicación en redes sociales, siempre dispuestas a nuevos cambios y con buena onda. Muy contentos de haber recorrido el camino juntos. ¡Vamos por más!</p>
-                            <h6 class="testimonial-card-title">Pablo - Bokata Restaurante & Café de especialidad</h6>
+                            <div style="display: flex; width: 100%;">
+                                <img src="imgs/cliente-2.png" style="display: flex; width: 50%;">
+                                <h6 class="testimonial-card-title" style="display: flex; width: 40%;">Pablo</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,7 +299,10 @@
                         </div>
                         <div class="testimonial-card-body">
                             <p class="testimonial-card-subtitle">La experiencia de trabajo con Comunica y Crea es muy positiva. Inventé un instagram y subia cosas según mi criterio y no tenía una respuesta ni interacción. Desde que empecé a trabajar con la agencia no solo aumenté los seguidores, sino que se pudo crear una comunidad que le interesa lo que ofrezco y recibo diariamente muchas consultas. El material visual denota las virtudes y capacidad del Complejo. Actualmente sumé otro complejo de cabañas en donde no dude en contratar a Comunica y Crea para hacerlo crecer.</p>
-                            <h6 class="testimonial-card-title">Aldana Diaz</h6>
+                            <div style="display: flex; width: 100%;">
+                                <img src="imgs/cliente-1.png" style="display: flex; width: 50%;">
+                                <h6 class="testimonial-card-title" style="display: flex; width: 40%;">Aldana Diaz</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -350,6 +383,19 @@
     <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
 	<script src="vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="js/meyawo.js"></script>
+    <script>
+        const gallery = document.querySelector('.gallery');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            const offset = -currentIndex * 100;
+            gallery.style.transform = `translateX(${offset}%)`;
+        }
+
+        setInterval(showNextImage, 4000); // Cambia de imagen cada 4 segundos
+    </script>
 
 </body>
 </html>

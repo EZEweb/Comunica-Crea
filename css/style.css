@@ -44,6 +44,78 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 2%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.gallery-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.galeria-nuestrahistoria {
+  display: flex;
+  width: 400%; /* Ajustar para contener todas las imágenes */
+  transition: transform 1s ease;
+}
+
+.galeria-nuestrahistoria-img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.galeria-nuestrahistoria-img img {
+  height: auto;
+  display: block;
+}
+
+article {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tabbed Banner Start */
+#GalleryHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GalleryTab {
+  position: relative;
+  height: 150px;
+  float: left;
+}
+
+.GalleryImage img{
+  border-radius: 5%;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -2119,6 +2191,9 @@ pre code {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+  .section .galeria img{
+    width: 100%;
   }
   .table-responsive-md > .table-bordered {
     border: 0;
@@ -12094,7 +12169,7 @@ pre .code {
 }
 
 .header .header-content .header-title .up {
-  font-size: calc(8px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: 24px;
   font-weight: 300;
   color: #444;
   margin-bottom: 5px;
@@ -12103,7 +12178,7 @@ pre .code {
 }
 
 .header .header-content .header-title .down {
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 0;
   position: relative;
   display: block;
@@ -12190,8 +12265,8 @@ pre .code {
 }
 
 .about-img-holder {
-  min-width: 400px;
-  max-width: 400px;
+  display: flex;
+  width: 50%;
   margin-right: 20px;
 }
 
@@ -12205,6 +12280,7 @@ pre .code {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  width: 50%;
 }
 
 @media (max-width: 767.98px) {
