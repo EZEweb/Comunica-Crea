@@ -112,10 +112,6 @@ article {
   float: left;
 }
 
-.GalleryImage img{
-  border-radius: 5%;
-}
-
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -12115,6 +12111,7 @@ pre .code {
 
 @media (max-width: 767.98px) {
   .footer {
+    text-align:center;
     padding: 15px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
