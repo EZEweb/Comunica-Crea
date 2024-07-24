@@ -120,6 +120,40 @@ article {
   float: left;
 }
 
+.hero {
+  width: 100%;
+  height: 181px; /* Altura fija basada en la altura de las imágenes */
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 400%; /* 4 imágenes al 100% cada una */
+  height: 100%;
+  animation: slide 20s ease-in-out infinite; /* 4s por imagen * 4 imágenes */
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  6.25% { transform: translateX(0%); }
+  25% { transform: translateX(-25%); }
+  31.25% { transform: translateX(-25%); }
+  50% { transform: translateX(-50%); }
+  56.25% { transform: translateX(-50%); }
+  75% { transform: translateX(-75%); }
+  81.25% { transform: translateX(-75%); }
+  100% { transform: translateX(0%); }
+}
+
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -648,11 +682,17 @@ pre code {
   .container {
     max-width: 540px;
   }
+  .hero {
+    height: 200px;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  .hero {
+    height: 200px;
   }
 }
 
@@ -660,12 +700,17 @@ pre code {
   .container {
     max-width: 960px;
   }
-
+  .hero {
+    height: 200px;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+  .hero {
+    height: 400px;
   }
 }
 
